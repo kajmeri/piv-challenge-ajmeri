@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="main.js"></script>
+    <meta charset="utf-8">
+    <title>PIV Coding Challenge - Ajmeri</title>
+</head>
+
+<body>
+    <div id="app">
+        <h2>PIV Coding Challenge - Ajmeri</h2>
+        <h3>NBA Player Data</h3>
+        <div>
+            <button id="queryButton" onclick="runQuery()">Run Default Query</button>
+        </div>
+        <br>
+        <div>
+            <button onclick="pageDown()">
+                < </button> <button onclick="pageUp()">>
+            </button>
+            <label>Page </label><label id="pageNumber"></label>
+            <input type="string" id="searchTerm" placeholder="Filter by Player...">
+            <button onclick="filter()">Filter</button>
+        </div>
+
+        <br>
+        <table id="table" border="1">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Position</th>
+                <th>Team</th>
+            </tr>
+        </table>
+        <label id="total"></label><label> Results</label>
+    </div>
+</body>
+
+</html>
+
+<style>
+    #queryButton {
+        height: 40px;
+        width: 100px;
+    }
+
+    h2 {
+        color: blue;
+    }
+
+    h3 {
+        color: red;
+    }
+
+    th {
+        padding-right: 1rem;
+    }
+
+    input {
+        margin-left: 3rem;
+    }
+</style>
